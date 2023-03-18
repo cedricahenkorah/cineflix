@@ -20,7 +20,7 @@ const Navbar = () => {
         <>
           <div className="hidden md:flex">
             <Link to="/account">
-              <button className="text-white pr-4">Account</button>
+              <button className="text-white pr-4 py-2">Account</button>
             </Link>
 
             <button
@@ -52,7 +52,7 @@ const Navbar = () => {
         <>
           <div className="md:flex hidden">
             <Link to="/login">
-              <button className="text-white pr-4">Sign in</button>
+              <button className="text-white pr-4 py-2">Sign in</button>
             </Link>
             <Link to="/signup">
               <button className="bg-amber-400 px-6 py-2 rounded cursor-pointer text-white">
