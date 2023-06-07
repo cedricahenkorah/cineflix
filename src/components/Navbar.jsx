@@ -32,7 +32,11 @@ const Navbar = () => {
             </button>
           </div>
           <div className="md:hidden flex">
-            <Dropdown arrowIcon={false} inline={true} label={<FiMenu />}>
+            <Dropdown
+              arrowIcon={false}
+              inline={true}
+              label={<FiMenu size={30} />}
+            >
               <Dropdown.Header>
                 <span className="block text-sm font-semibold">
                   {user.email}
