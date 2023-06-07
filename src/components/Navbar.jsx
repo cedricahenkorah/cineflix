@@ -4,6 +4,7 @@ import { useAuthContext } from "../hooks/useAuthContext";
 import { useLogout } from "../hooks/useLogout";
 import { Dropdown } from "flowbite-react";
 import { ImMenu } from "react-icons/im";
+import { FiMenu } from "react-icons/fi";
 
 const Navbar = () => {
   const { user } = useAuthContext();
@@ -31,11 +32,7 @@ const Navbar = () => {
             </button>
           </div>
           <div className="md:hidden flex">
-            <Dropdown
-              arrowIcon={false}
-              inline={true}
-              label={<ImMenu size={30} />}
-            >
+            <Dropdown arrowIcon={false} inline={true} label={<FiMenu />}>
               <Dropdown.Header>
                 <span className="block text-sm font-semibold">
                   {user.email}
@@ -61,11 +58,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className="md:hidden flex">
-            <Dropdown
-              arrowIcon={false}
-              inline={true}
-              label={<ImMenu size={30} />}
-            >
+            <Dropdown arrowIcon={false} label={<FiMenu />}>
               <Dropdown.Item>
                 <Link to="/login">Sign in</Link>
               </Dropdown.Item>
